@@ -31,3 +31,17 @@ function finalizarPedido() {
     pedido = [];
     atualizarPedido();
 }
+
+function exibirAba(aba) {
+    const abas = document.querySelectorAll('.aba');
+    abas.forEach(function(element) {
+        element.style.display = 'none';
+    });
+
+    document.getElementById(aba).style.display = 'flex';
+}
+
+// Exibir a aba de lanches ao carregar a página
+document.addEventListener("DOMContentLoaded", function() {
+    exibirAba('lanches');
+});

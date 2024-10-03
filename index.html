@@ -11,7 +11,9 @@
         <h1>Lanchonete do Furlani</h1>
         <nav>
             <ul>
-                <li><a href="#menu">Menu</a></li>
+                <li><a href="#" onclick="exibirAba('lanches')">Lanches</a></li>
+                <li><a href="#" onclick="exibirAba('bebidas')">Bebidas</a></li>
+                <li><a href="#" onclick="exibirAba('sobremesas')">Sobremesas</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -19,158 +21,179 @@
     </header>
 
     <section id="menu">
-        <h2>Nosso Cardápio</h2>
-        <div class="cardapio">
+    <h2>Nosso Cardápio</h2>
+    <div class="cardapio">
+        <div class="item">
+            <img src="X-Frango.jpg" alt="X-Frango">
+            <h3>X-Frango</h3>
+            <p>R$ 22,00</p>
+            <button onclick="adicionarPedido('X-Frango', 22)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-Salada Frango.jpeg" alt="X-Frango Salada">
+            <h3>X-Frango Salada</h3>
+            <p>R$ 20,00</p>
+            <button onclick="adicionarPedido('X-Frango Salada', 20)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-Frango Salada Egg.png" alt="X-Frango Salada Egg">
+            <h3>X-Frango Salada Egg</h3>
+            <p>R$ 23,00</p>
+            <button onclick="adicionarPedido('X-Frango Salada Egg', 23)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-FRANGO-BACON.png" alt="X-Frango Bacon">
+            <h3>X-Frango Bacon</h3>
+            <p>R$ 29,00</p>
+            <button onclick="adicionarPedido('X-Frango Bacon', 29)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-Frango Catuíry.jpeg" alt="X-Frango Catupiry">
+            <h3>X-Frango Catupiry</h3>
+            <p>R$ 32,00</p>
+            <button onclick="adicionarPedido('X-Frango Catupiry', 32)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-FrangoBaconSalada.jpg" alt="X-Frango Bacon Salada">
+            <h3>X-Frango Bacon Salada</h3>
+            <p>R$ 29,00</p>
+            <button onclick="adicionarPedido('X-Frango Bacon Salada', 29)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-FRANGO-EGG.jpg" alt="X-Frango Egg">
+            <h3>X-Frango Egg</h3>
+            <p>R$ 25,00</p>
+            <button onclick="adicionarPedido('X-Frango Egg', 25)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-Frango Tudo.png" alt="X-Frango Tudo">
+            <h3>X-Frango Tudo</h3>
+            <p>R$ 31,00</p>
+            <button onclick="adicionarPedido('X-Frango Tudo', 31)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-Bacon.avif" alt="X-Bacon">
+            <h3>X-Bacon</h3>
+            <p>R$ 27,00</p>
+            <button onclick="adicionarPedido('X-Bacon', 27)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-Bacon egg.jpeg" alt="X-Bacon Egg">
+            <h3>X-Bacon Egg</h3>
+            <p>R$ 28,00</p>
+            <button onclick="adicionarPedido('X-Bacon Egg', 28)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X- Bacon Salada.jpeg" alt="X-Bacon Salada">
+            <h3>X-Bacon Salada</h3>
+            <p>R$ 28,00</p>
+            <button onclick="adicionarPedido('X-Bacon Salada', 28)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-Bacon Triplo.jpeg" alt="X-Bacon Triplo">
+            <h3>X-Bacon Triplo</h3>
+            <p>R$ 33,00</p>
+            <button onclick="adicionarPedido('X-Bacon Triplo', 33)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-Burguer.jpeg" alt="X-Burguer">
+            <h3>X-Burguer</h3>
+            <p>R$ 20.00</p>
+            <button onclick="adicionarPedido('X-Burguer', 20)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-Burgão.jpg" alt="X-Burgão">
+            <h3>X-Burgão</h3>
+            <p>R$ 27,00</p>
+            <button onclick="adicionarPedido('X-Burgão', 27)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-Calabresa.jpg" alt="X-Calabresa">
+            <h3>X-Calabresa</h3>
+            <p>R$ 27,00</p>
+            <button onclick="adicionarPedido('X-Calabresa', 27)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-Egg.avif" alt="X-Egg">
+            <h3>X-Egg</h3>
+            <p>R$ 24,00</p>
+            <button onclick="adicionarPedido('X-Egg', 24)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-Egg salada.webp" alt="X-Egg Salada">
+            <h3>X-Egg Salada</h3>
+            <p>R$ 24,00</p>
+            <button onclick="adicionarPedido('X-Egg Salada', 24)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-Salada.jpeg" alt="X-Salada">
+            <h3>X-Salada</h3>
+            <p>R$ 22,00</p>
+            <button onclick="adicionarPedido('X-Salada', 22)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-Saladão.jpg" alt="X-Saladão">
+            <h3>X-Saladão</h3>
+            <p>R$ 29,00</p>
+            <button onclick="adicionarPedido('X-Saladão', 29)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-Tudão.jpg" alt="X-Tudão">
+            <h3>X-Tudão</h3>
+            <p>R$ 37,00</p>
+            <button onclick="adicionarPedido('X-Tudão', 37)">Pedir</button>                
+        </div>
+        <div class="item">
+            <img src="X-Tudo.jpg" alt="X-Tudo">
+            <h3>X-Tudo</h3>
+            <p>R$ 28,00</p>
+            <button onclick="adicionarPedido('X-Tudo', 28)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-Filé Mignon.jpg" alt="X-Filé Mignon">
+            <h3>X-Filé Mignon</h3>
+            <p>R$ 33,00</p>
+            <button onclick="adicionarPedido('X-Filé Mignon', 33)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-Filé Mignon Bacon.jpeg" alt="X-Filé Mignon Bacon">
+            <h3>X-Filé Mignon Bacon</h3>
+            <p>R$ 35,00</p>
+            <button onclick="adicionarPedido('X-Filé Mignon Bacon', 35)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="X-Picanha-Especial.png" alt="X-Picanha-Especial">
+            <h3>X-Picanha-Especial</h3>
+            <p>R$ 32,00</p>
+            <button onclick="adicionarPedido('X-Picanha-Especial', 32)">Pedir</button>
+        </div>
+        <div class="item">
+            <img src="Picanha-Salada-Egg-Bacon.png" alt="Picanha-Salada-Egg-Bacon">
+            <h3>X-Picanha-Salada-Egg-Bacon</h3>
+            <p>R$ 34,00</p>
+            <button onclick="adicionarPedido('X-Picanha-Salada-Egg-Bacon', 34)">Pedir</button>
+        </div>
+    </div>
+        <!-- Bebidas -->
+        <div class="cardapio aba" id="bebidas" style="display:none;">
             <div class="item">
-                <img src="X-Frango.jpg" alt="X-Frango">
-                <h3>X-Frango</h3>
-                <p>R$ 22,00</p>
-                <button onclick="adicionarPedido('X-Frango', 22)">Pedir</button>
+                <img src="coca-cola.jpg" alt="Coca-Cola">
+                <h3>Coca-Cola</h3>
+                <p>R$ 5,00</p>
+                <button onclick="adicionarPedido('Coca-Cola', 5)">Pedir</button>
             </div>
+            <!-- Adicione mais itens de bebida aqui -->
+        </div>
+
+        <!-- Sobremesas -->
+        <div class="cardapio aba" id="sobremesas" style="display:none;">
             <div class="item">
-                <img src="X-Salada Frango.jpeg" alt="X-Frango Salada">
-                <h3>X-Frango Salada</h3>
-                <p>R$ 20,00</p>
-                <button onclick="adicionarPedido('X-Frango Salada', 20)">Pedir</button>
+                <img src="sorvete.jpg" alt="Sorvete">
+                <h3>Sorvete</h3>
+                <p>R$ 10,00</p>
+                <button onclick="adicionarPedido('Sorvete', 10)">Pedir</button>
             </div>
-            <div class="item">
-                <img src="X-Frango Salada Egg.png" alt="X-Frango Salada Egg">
-                <h3>X-Frango Salada Egg</h3>
-                <p>R$ 23,00</p>
-                <button onclick="adicionarPedido('X-Frango Salada Egg', 23)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-FRANGO-BACON.png" alt="X-Frango Bacon">
-                <h3>X-Frango Bacon</h3>
-                <p>R$ 29,00</p>
-                <button onclick="adicionarPedido('X-Frango Bacon', 29)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-Frango Catuíry.jpeg" alt="X-Frango Catupiry">
-                <h3>X-Frango Catupiry</h3>
-                <p>R$ 32,00</p>
-                <button onclick="adicionarPedido('X-Frango Catupiry', 32)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-FrangoBaconSalada.jpg" alt="X-Frango Bacon Salada">
-                <h3>X-Frango Bacon Salada</h3>
-                <p>R$ 29,00</p>
-                <button onclick="adicionarPedido('X-Frango Bacon Salada', 29)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-FRANGO-EGG.jpg" alt="X-Frango Egg">
-                <h3>X-Frango Egg</h3>
-                <p>R$ 25,00</p>
-                <button onclick="adicionarPedido('X-Frango Egg', 25)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-Frango Tudo.png" alt="X-Frango Tudo">
-                <h3>X-Frango Tudo</h3>
-                <p>R$ 31,00</p>
-                <button onclick="adicionarPedido('X-Frango Tudo', 31)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-Bacon.avif" alt="X-Bacon">
-                <h3>X-Bacon</h3>
-                <p>R$ 27,00</p>
-                <button onclick="adicionarPedido('X-Bacon', 27)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-Bacon egg.jpeg" alt="X-Bacon Egg">
-                <h3>X-Bacon Egg</h3>
-                <p>R$ 28,00</p>
-                <button onclick="adicionarPedido('X-Bacon Egg', 28)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X- Bacon Salada.jpeg" alt="X-Bacon Salada">
-                <h3>X-Bacon Salada</h3>
-                <p>R$ 28,00</p>
-                <button onclick="adicionarPedido('X-Bacon Salada', 28)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-Bacon Triplo.jpeg" alt="X-Bacon Triplo">
-                <h3>X-Bacon Triplo</h3>
-                <p>R$ 33,00</p>
-                <button onclick="adicionarPedido('X-Bacon Triplo', 33)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-Burguer.jpeg" alt="X-Burguer">
-                <h3>X-Burguer</h3>
-                <p>R$ 20.00</p>
-                <button onclick="adicionarPedido('X-Burguer', 20)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-Burgão.jpg" alt="X-Burgão">
-                <h3>X-Burgão</h3>
-                <p>R$ 27,00</p>
-                <button onclick="adicionarPedido('X-Burgão', 27)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-Calabresa.jpg" alt="X-Calabresa">
-                <h3>X-Calabresa</h3>
-                <p>R$ 27,00</p>
-                <button onclick="adicionarPedido('X-Calabresa', 27)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-Egg.avif" alt="X-Egg">
-                <h3>X-Egg</h3>
-                <p>R$ 24,00</p>
-                <button onclick="adicionarPedido('X-Egg', 24)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-Egg salada.webp" alt="X-Egg Salada">
-                <h3>X-Egg Salada</h3>
-                <p>R$ 24,00</p>
-                <button onclick="adicionarPedido('X-Egg Salada', 24)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-Salada.jpeg" alt="X-Salada">
-                <h3>X-Salada</h3>
-                <p>R$ 22,00</p>
-                <button onclick="adicionarPedido('X-Salada', 22)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-Saladão.jpg" alt="X-Saladão">
-                <h3>X-Saladão</h3>
-                <p>R$ 29,00</p>
-                <button onclick="adicionarPedido('X-Saladão', 29)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-Tudão.jpg" alt="X-Tudão">
-                <h3>X-Tudão</h3>
-                <p>R$ 37,00</p>
-                <button onclick="adicionarPedido('X-Tudão', 37)">Pedir</button>                
-            </div>
-            <div class="item">
-                <img src="X-Tudo.jpg" alt="X-Tudo">
-                <h3>X-Tudo</h3>
-                <p>R$ 28,00</p>
-                <button onclick="adicionarPedido('X-Tudo', 28)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-Filé Mignon.jpg" alt="X-Filé Mignon">
-                <h3>X-Filé Mignon</h3>
-                <p>R$ 33,00</p>
-                <button onclick="adicionarPedido('X-Filé Mignon', 33)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-Filé Mignon Bacon.jpeg" alt="X-Filé Mignon Bacon">
-                <h3>X-Filé Mignon Bacon</h3>
-                <p>R$ 35,00</p>
-                <button onclick="adicionarPedido('X-Filé Mignon Bacon', 35)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="X-Picanha-Especial.png" alt="X-Picanha-Especial">
-                <h3>X-Picanha-Especial</h3>
-                <p>R$ 32,00</p>
-                <button onclick="adicionarPedido('X-Picanha-Especial', 32)">Pedir</button>
-            </div>
-            <div class="item">
-                <img src="Picanha-Salada-Egg-Bacon.png" alt="Picanha-Salada-Egg-Bacon">
-                <h3>X-Picanha-Salada-Egg-Bacon</h3>
-                <p>R$ 34,00</p>
-                <button onclick="adicionarPedido('X-Picanha-Salada-Egg-Bacon', 34)">Pedir</button>
-            </div>
+            <!-- Adicione mais itens de sobremesa aqui -->
         </div>
 
         <h3>Seu Pedido:</h3>
