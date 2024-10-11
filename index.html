@@ -14,6 +14,7 @@
                 <li><a href="#" onclick="exibirAba('lanches')">Lanches</a></li>
                 <li><a href="#" onclick="exibirAba('bebidas')">Bebidas</a></li>
                 <li><a href="#" onclick="exibirAba('sobremesas')">Sobremesas</a></li>
+                <li><a href="#" onclick="exibirAba('Porções')">Porções</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -173,6 +174,16 @@
             <p>R$ 34,00</p>
             <button onclick="adicionarPedido('X-Picanha-Salada-Egg-Bacon', 34)">Pedir</button>
         </div>
+
+        <div class="cardapio aba" id="Porções" style="display: none;">
+            <div class="item">
+                <img src="Batatinha.jpg" alt="Batatinha">
+                <h3>Porção de Batata Frita</h3>
+                <p>R$ 10,00</p>
+                <button onclick="adicionarPedido('Batatinha', 10)">Pedir</button>
+            </div>
+        </div>
+    
     </div>
         <div class="cardapio aba" id="bebidas" style="display:none;">
             <div class="item">
@@ -215,11 +226,13 @@
                 <img src="Coca-Cola-Zero-200ml.webp" alt="Coca-Cola-Zero-200ml">
                 <h3>Coca-Cola Zero 200ml</h3>
                 <p>R$ 2,50</p>
+                <button onclick="adicionarPedido('Coca-Cola-Zero-200ml', 2,5)">Pedir</button>
             </div>
             <div class="item">
                 <img src="Coca-Cola-200ml.webp" alt="Coca-Cola-200ml">
                 <h3>Coca-Cola-200ml</h3>
                 <p>R$ 2,00</p>
+                <button onclick="adicionarPedido('Coca-Cola-200ml', 2)">Pedir</button>
             </div>
         </div>
 
